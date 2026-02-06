@@ -1,6 +1,6 @@
 
 from pathlib import Path
-
+import random
 
 word_file = Path ("words.txt")
 def find_word_file():
@@ -21,7 +21,8 @@ word_bank = load_word_bank()
 def main():
     print("wordle test prod")
     words = load_word_bank(word_file)
-    
+sample = random.choice("words")
+print (f"First sample test: {sample}")
 if__name__== "__main__":
 main()
   
